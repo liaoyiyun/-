@@ -1,0 +1,218 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: #ccc;
+    }
+    /* 白色框框 */
+    
+    .wrap {
+        background: #fff;
+        width: 900px;
+        margin: 40px auto;
+        padding: 40px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+    }
+    
+    .wrap h2 {
+        font-size: 18px;
+        margin-bottom: 40px;
+        border-bottom: 1px dotted #ccc;
+        padding-bottom: 8px;
+    }
+    /* 基本資料 */
+    
+    .profile {
+        background: #eee;
+        overflow: hidden;
+        padding: 20px;
+        margin-bottom: 60px;
+    }
+    
+    .profile .left {
+        width: 60%;
+        float: left;
+        margin-right: 8%;
+    }
+    
+    .profile .left img {
+        width: 100%;
+    }
+    
+    .profile .right {}
+    
+    .profile .right h1.name {
+        font-size: 20px;
+        margin-bottom: 120px;
+        padding-top: 20px;
+    }
+    
+    .profile .right .info {
+        font-size: 14px;
+        margin-bottom: 23px;
+        line-height: 150%;
+    }
+    
+    .profile .right .link {}
+    
+    .profile .right .link a {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        opacity: 1;
+        transition: opacity .5s;
+    }
+    
+    .profile .right .link a:hover {
+        opacity: .5;
+    }
+    
+    .profile .right .link a img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .profile .right .mail {
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .profile .right .mail::before {
+        content: "E";
+    }
+    
+    .profile .right .mail a {
+        color: #000;
+    }
+    
+    .profile .right .mail a:hover {
+        text-decoration: none;
+    }
+    
+    .profile .right .phone {
+        font-size: 14px;
+    }
+    
+    .profile .right .phone::before {
+        content: "P";
+    }
+    /* 技能 */
+    
+    .skill {
+        overflow: hidden;
+        margin-bottom: 48px;
+    }
+    
+    .skill ul {
+        list-style: none;
+        font-size: 14px;
+    }
+    
+    .skill ul li {
+        width: 25%;
+        float: left;
+        margin-right: 12%;
+        text-align: center;
+    }
+    
+    .skill ul li:nth-child(3n) {
+        margin-right: 0;
+    }
+    /* 經歷 */
+    
+    .experience {
+        overflow: hidden;
+        margin-bottom: 40px;
+    }
+    
+    .experience .leftB {
+        float: left;
+        width: 48%;
+        margin-right: 2%;
+        padding-left: 48px;
+    }
+    
+    .experience .rightB {
+        float: right;
+        width: 40%;
+    }
+    
+    .experience ul {
+        list-style: none;
+        font-size: 14px;
+        border-left: 1px solid #ccc;
+    }
+    
+    .experience ul li {
+        margin-bottom: 24px;
+        padding-left: 40px;
+        position: relative;
+    }
+    
+    .experience ul li::before {
+        content: "";
+        width: 4px;
+        height: 4px;
+        display: block;
+        border-radius: 50%;
+        background: #aaa;
+        position: absolute;
+        left: -2.5px;
+        top: 8px;
+    }
+    
+    .experience ul li span {
+        display: block;
+        font-size: 12px;
+        color: #aaa;
+    }
+    /* 作品 */
+    
+    .work {
+        overflow: hidden;
+        margin-bottom: 40px;
+    }
+    
+    .work ul {
+        list-style: none;
+    }
+    
+    .work ul li {
+        width: 16%;
+        height: 550px;
+        float: left;
+        margin-bottom: 8px;
+        padding-right: 5px;
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+    }
+    
+    .work ul li img {
+        width: 150px;
+        transform: scale(1);
+        transition: all 1s;
+    }
+    
+    .work ul li:hover img {
+        transform: scale(1.1);
+    }
+    
+    .work ul li .text {
+        width: 150px;
+        position: absolute;
+        bottom: -64px;
+        padding: 8px;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, .6);
+        color: #fff;
+        transition: all 2s;
+        text-align: center;
+    }
+    
+    .work ul li:hover .text {
+        bottom: 0;
+    }
